@@ -27,7 +27,7 @@ body{
 	/*margin-top: 20px;*/
 }
 .video-card{
-	height: 500px;
+	height: calc(100vh - 180px);
 	background-color: var(--secondary-text-color);
 	display: -webkit-flex;
 	display: -moz-flex;
