@@ -1,0 +1,102 @@
+
+
+:root{
+	--dark-primary-color    : #512DA8; 
+	--default-primary-color : #673AB7; 
+	--light-primary-color   : #D1C4E9; 
+	--text-primary-color    : #FFFFFF; 
+	--accent-color          : #FF4081; 
+	--primary-text-color    : #212121; 
+	--secondary-text-color  : #757575; 
+	--divider-color         : #BDBDBD; 
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar{
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	background-color: var(--default-primary-color) !important;
+}
+.main{
+	padding-top: 66px;
+	/*margin-top: 20px;*/
+}
+.video-card{
+	height: 500px;
+	background-color: var(--secondary-text-color);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;	
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.play-button{
+	font-size: 30px !important;
+	color: white;
+}
+.box{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.box-inside{
+	width: 150px;
+	/*height: 100px;*/
+	background-color: rgba(0,0,0,0.12);
+	margin: 0px 10px 20px 0px;
+}
+
+
+.details{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+.vid-detail h3{
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 10px;
+}
+.vid-detail p{
+	padding-top: 5px;
+	font-size: 12px;
+	line-height: 15px;
+}
+.vid p:first-child{
+	/*font-weight: 500;*/
+	font-size: 13px;
+	padding-top: 2px;
+	color: rgba(0,0,0,0.97);
+}
+
+.vid p:last-child{
+	/*font-weight: 430;*/
+	font-size: 12px;
+	position: relative;
+	top: -10px !important;
+	color: rgba(0,0,0,0.57);
+}
+
+.words{
+	font-family: 'Open Sans', sans-serif;
+}
+.words div{
+	margin-bottom: 10px;
+	font-size: 12px;
+}
