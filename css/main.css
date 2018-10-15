@@ -16,18 +16,39 @@ body{
 }
 
 
+body{
+	padding: 0;
+	margin: 0;
+}
+nav{
+	padding: 0 !important;
+}
 .navbar{
 	position: fixed;
+	height: 60px;
 	width: 100%;
-	z-index: 999;
+	z-index: 998;
+	background-color: #fff;
+}
+.line{
 	background-color: var(--default-primary-color) !important;
+	height: 4px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	/*top: 20px;*/
+	z-index: 999;
+}
+.navbar-brand{
+	padding-left: 15px;
 }
 .main{
-	padding-top: 66px;
+	padding-top: 76px;
+	background-color: #fafbfb;
 	/*margin-top: 20px;*/
 }
 .video-card{
-	height: calc(100vh - 180px);
+	height: calc(100vh - 250px);
 	background-color: var(--secondary-text-color);
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -38,6 +59,22 @@ body{
 	-ms-align-items: center;
 	align-items: center;
 	margin-bottom: 10px;
+	overflow: hidden;
+}
+.image-holder{
+	height: 100%;
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .play-button{
 	font-size: 30px !important;
