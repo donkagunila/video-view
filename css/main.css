@@ -95,12 +95,12 @@ nav{
 /*the main part*/
 .main{
 	padding-top: 76px;
-	background-color: #fafbfb;
+	/*background-color: #fafbfb;*/
 	padding-left: 15px;
 	/*margin-top: 20px;*/
 }
 .video-card{
-	height: calc(100vh - 250px);
+	height: calc(100vh - 200px);
 	background-color: var(--secondary-text-color);
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -128,6 +128,49 @@ nav{
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+.user-place{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+.user-name{
+	font-size: 14px;
+	margin-top: 10px;
+	font-weight:500;
+	/*margin: 10px 0px;*/
+}
+.user-title{
+	margin: 3px 0px 10px 0px;
+	color: rgba(0,0,0,0.57);
+}
+
+.avatar{
+	height: 52px;
+	width: 52px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.24);
+}
+.fs-12{
+	font-size: 12px;
+}
+.user-avatar{
+	
+}
+.image-responsive{
+	height: 100%;
+}
+.btn-follow{
+	background-color: var(--accent-color);
+	color: #fff;
+}
 .play-button{
 	font-size: 30px !important;
 	color: white;
@@ -147,7 +190,10 @@ nav{
 	margin: 0px 10px 20px 0px;
 }
 
-
+.video-holder{
+	/*background-color: #fff;*/
+	padding-bottom: 15px;
+}
 .details{
 	/*display: -webkit-flex;
 	display: -moz-flex;
@@ -155,6 +201,9 @@ nav{
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;*/
+	margin-top: 20px;
+}
+.vid-detail{
 	margin-top: 20px;
 }
 .vid-detail h3{
@@ -165,7 +214,10 @@ nav{
 .vid-detail p{
 	padding-top: 5px;
 	font-size: 12px;
-	line-height: 15px;
+	line-height: 20px;
+	color: rgba(0,0,0,0.64);
+	padding-right: 15px;
+
 }
 .vid p:first-child{
 	/*font-weight: 500;*/
@@ -182,10 +234,11 @@ nav{
 	color: rgba(0,0,0,0.57);
 }
 
-.words{
+.video-words{
+	margin-top: 20px;
 	font-family: 'Open Sans', sans-serif;
 }
-.words div{
+.video-words div{
 	margin-bottom: 10px;
 	font-size: 12px;
 }
