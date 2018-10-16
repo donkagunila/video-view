@@ -7,12 +7,12 @@
     <meta name="author" content="">
 	<title>Video View Concept</title>
 
+	<!-- icons and fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins" rel="stylesheet">
-
-	<!-- fonts -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
 
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -22,6 +22,9 @@
 	<!-- header -->
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light">
+			<span class="menu-btn" id="menu">
+				<i class="fa fa-bars"></i>
+			</span>
 		  <a class="navbar-brand" href="#">Navbar</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
@@ -33,7 +36,7 @@
 		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Account
 		        </a>
-		        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+		        <div class="dropdown-menu dropdown-menu-right animated zoomInRight" aria-labelledby="navbarDropdown">
 		          <a class="dropdown-item" href="#">Action</a>
 		          <a class="dropdown-item" href="#">Another action</a>
 		          <div class="dropdown-divider"></div>
@@ -49,6 +52,15 @@
 
 
 
+	<div class="overlap"></div>
+
+
+	<aside class="sidenav animated slideInLeft faster">
+		here we are
+	</aside>
+
+
+
 	<main class="main">
 
 		<div class="container-fluid">
@@ -57,18 +69,28 @@
 					<div class="video-card">
 						<div class="image-holder" style="background-image: url(img/a.jpg);">
 							<!-- <img src="img/a.jpg" class="image-responsive" alt=""> -->
-							<iframe src="https://onedrive.live.com/embed?cid=1D323B1C3E0C1D9E&amp;resid=1D323B1C3E0C1D9E%21113&amp;authkey=AEyH2OHgnuVAuvE&amp;em=2&amp;wdAr=1.7777777777777777&amp;wdEaa=1" width="100%" height="100%" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+							<!-- <iframe src="https://onedrive.live.com/embed?cid=1D323B1C3E0C1D9E&amp;resid=1D323B1C3E0C1D9E%21113&amp;authkey=AEyH2OHgnuVAuvE&amp;em=2&amp;wdAr=1.7777777777777777&amp;wdEaa=1" width="100%" height="100%" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe> -->
 						</div>
 					</div>
 
 
 					<div class="details">
-						<div class="vid-detail">
-							<h3>
-								The Secrets of the millionaires
-							</h3>
-							<p>The reasons you do not get reach</p>
+						<div class="row">
+							<div class="col-md-3">
+								user place
+							</div>
+
+
+							<div class="col-md-9">
+								<div class="vid-detail">
+									<h3>
+										The Secrets of the millionaires
+									</h3>
+									<p>The reasons you do not get reach</p>
+								</div>
+							</div>
 						</div>
+						
 						<div class="controls">
 							<div class="ml-auto">
 								<a class="" href="#">
@@ -259,5 +281,6 @@
 	  <!-- Bootstrap core JavaScript -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

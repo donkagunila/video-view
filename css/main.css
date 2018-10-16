@@ -20,14 +20,20 @@ body{
 	padding: 0;
 	margin: 0;
 }
+body.has-overlap{
+	/*height: 100vh;*/
+	/*width: 100vh;*/
+	overflow: hidden;
+}
 nav{
 	padding: 0 !important;
+	color: rgba(0,0,0,0.64);
 }
 .navbar{
 	position: fixed;
 	height: 60px;
 	width: 100%;
-	z-index: 998;
+	z-index: 994;
 	background-color: #fff;
 }
 .line{
@@ -42,9 +48,55 @@ nav{
 .navbar-brand{
 	padding-left: 15px;
 }
+
+.menu-btn{
+	/*padding-left: 15px;*/
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	margin: 0 15px;
+	height: 100%;
+	-ms-align-items: center;
+	align-items: center;
+	width: 50px;
+	cursor: pointer;
+}
+
+
+
+.overlap{
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;	
+	background-color: rgba(0,0,0,0.24);
+	z-index: 996;
+	display: none;
+}
+
+/*the side navigation*/
+.sidenav{
+	height: 100vh;
+	width: 280px;
+	position: fixed;
+	top: 0;
+	background-color: #fff;
+	z-index: 999;
+	display: none;
+}
+
+
+
+
+/*the main part*/
 .main{
 	padding-top: 76px;
 	background-color: #fafbfb;
+	padding-left: 15px;
 	/*margin-top: 20px;*/
 }
 .video-card{
@@ -97,12 +149,12 @@ nav{
 
 
 .details{
-	display: -webkit-flex;
+	/*display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-between;*/
 	margin-top: 20px;
 }
 .vid-detail h3{
