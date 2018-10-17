@@ -62,7 +62,7 @@ nav{
 	z-index: 999;
 }
 .navbar-brand{
-	padding-left: 15px;
+	/*padding-left: 15px;*/
 }
 
 .menu-btn{
@@ -310,16 +310,16 @@ nav{
 }
 
 .words-part{
-	width: 80%;
-	padding-left: 13px;
-	margin: 0 auto;
+	/*width: 80%;*/
+	/*padding-left: 13px;*/
+	/*margin: 0 auto;*/
 }
 .quick-tabs{
 	margin-top: -60px;
 	margin-bottom: 20px;
 }
 .quick-tabs-holder{
-	width: 80%;
+	/*width: 80%;*/
 	margin: 0 auto;
 }
 .quick-tabs .card{
@@ -347,4 +347,109 @@ nav{
 .q-tabs-desc{
 	color: rgba(0,0,0,0.67);
 	font-size: 14px;
+}
+.footer{
+	background-color: #1D2026;
+	padding-top: 40px;
+	color: #fff;
+}
+.separator{
+	background-color: var(--accent-color);
+	height: 2px;
+	width: 60px;
+	margin-bottom: 20px;
+}
+.footer{
+		color: #ffffff80;
+}
+.footer ul{
+	padding: 0;
+	list-style: none;
+}
+.footer ul.links li a{
+	display: block;
+	margin-bottom: 10px;
+	text-decoration: none;
+	color: #ffffff80;
+}
+.footer ul.links li a:hover{
+	color: #fff;
+}
+.link-title p{
+	color: #fff;
+	font-weight: 600;
+}
+.social-share{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+.social-share ul{
+	padding: 0;
+	list-style: none; 
+}
+.social-share ul li{
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	margin-right: 10px;
+}
+.social-share ul li a{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,0.12);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	transition: 0.35s;
+	text-decoration: none;
+	color: #fff;
+}
+.social-share ul li a:hover{
+	background-color: #fff;
+}
+.fb-icon:hover{
+	color: royalblue;
+}
+.tw-icon:hover{
+	color: blue;
+}
+.ig-icon:hover{
+	color: purple;
+}
+.a-link{
+	color: #ffffff80;
+	display: block;
+	margin-bottom: 10px;
+	text-decoration: none;
+}
+.a-link:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.footer-bottom{
+	height: 60px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+	-ms-align-items: center;
+	align-items: center;
+	padding-bottom: 15px;
+}
+
+hr.white{
+	border-bottom: 1px solid #ffffff40 !important;
 }
