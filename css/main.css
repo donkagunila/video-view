@@ -185,6 +185,17 @@ nav{
 .pr-20{
 	padding-right: 20px;
 }
+.pl-10{
+	padding-left: 10px;
+}
+.pl-20{
+	padding-left: 20px;
+}
+
+.w-70{
+	width: 70%;
+}
+
 
 .mr-20{
 	margin-right: 20px;
@@ -280,8 +291,11 @@ nav{
 .page-wrapper{
 	padding-top: 56px;
 }
-.page-title{
+.page-title, .section-title{
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+}
+.page-title h1{
+	font-size: 3rem;
 }
 .landing{
 	height: calc(100vh - 200px);
@@ -452,4 +466,47 @@ nav{
 
 hr.white{
 	border-bottom: 1px solid #ffffff40 !important;
+}
+
+
+
+/*section*/
+.section{
+	min-height: 500px;
+	padding-top: 50px;
+}
+.section-title{
+	font-size: 2.1rem;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+.section-title span{
+	display: block;
+}
+.section-tagline{
+	font-family: 'Open Sans', sans-serif;
+}
+.section-tagline p{
+	color: rgba(0,0,0,0.57);
+}
+.newslatter-form{
+	padding-top: 20px;
+}
+.newslatter-form .form-group{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+.newslatter-form,.newslatter-form form{
+	width: 70%;
+	margin: 0 auto;
+}
+.line-sep{
+	height: 2px;
+	width: 100px;
+	background-color: var(--accent-color);
+	margin: 10px 0px 20px 0px;
 }
