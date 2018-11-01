@@ -64,11 +64,12 @@ nav{
 	color: rgba(0,0,0,0.64);
 }
 .navbar{
-	position: fixed;
+	position: fixed !important;
 	height: 60px;
 	width: 100%;
 	z-index: 994;
 	background-color: #fff;
+	top: 0 !important;
 }
 .line{
 	background-color: var(--default-primary-color) !important;
@@ -313,6 +314,7 @@ nav{
 
 
 /*the landing page*/
+
 .page-wrapper{
 	padding-top: 56px;
 }
@@ -320,11 +322,17 @@ nav{
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 }
 .page-title h1{
-	font-size: 3rem;
+	font-size: 3.6rem;
+	color: #fff;
+	font-weight: 700;
+	text-align: center;
+}
+.page-tagline p{
+	text-align: center;
 }
 .landing{
 	height: calc(100vh - 200px);
-	background-color: #f2f5f5;
+	/*background-color: #f2f5f5;*/
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -332,6 +340,10 @@ nav{
 	display: flex;
 	-ms-align-items: center;
 	align-items: center;
+	background-image: url('../img/bg.jpg');
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .w-70{
 	width: 70%;
@@ -647,4 +659,47 @@ hr.white{
 }
 .tutor-icons li a:hover{
 	background-color: var(--accent-color) !important;
+}
+.overlap-landing{
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.35);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+
+
+
+@media screen and (max-width: 420px){
+	.navbar-brand{
+		margin-left: 20px;
+	}
+	.courses-summary {
+		display: none;
+	}
+	.page-title h1{
+		font-size: 2rem;
+		text-align: left;
+	}
+	.page-tagline p{
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+	.newslatter-form,.newslatter-form form{
+		width: 100%;
+		margin: 0 auto;
+    }
+    .newslatter-title{
+    	font-size: 1.7rem;
+    }
+    .newslatter-body{
+    	font-size: 14px;
+    }
+
 }
