@@ -8,7 +8,7 @@ if [[ $varans = 'y' || $varans = 'Y' || $varans = ''  ]]; then
 	printf $'\e[32;1mEnter commit message \e[0m'
 	read -r varmessage
 	git commit -m "$varmessage"
-	echo git push
+	echo $'\e[32;1mPushing changes to repo\e[0m'
 	git push
 else
 	exit 0
