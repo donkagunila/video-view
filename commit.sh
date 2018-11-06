@@ -1,5 +1,5 @@
 #!/bin/bash
-echo Status of the files
+echo $'\e[32;1mStatus of the files'
 git status
 echo addin
 git add .
