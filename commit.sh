@@ -1,11 +1,15 @@
 #!/bin/bash
 echo $'\e[32;1mStatus of the files \e[0m'
 git status
-echo add all files with git add .? \(y/n\) read varans
-git add .
-echo please enter message
-read varmessage
-echo git commit -m "$varmessage"
-git commit -m "$varmessage"
-echo git push
-git push
+printf $'\e[32;1mAdd all files with git add . ? (y/n) \e[0m' 
+read -r varans
+if [[ $varans = 'y' || $varans = 'Y' || $varans = ''  ]]; then
+	git add .
+	printf $'\e[32;1mEnter commit message \e[0m'
+	read -r varmessage
+	git commit -m "$varmessage"
+	echo git push
+	git push
+else
+	exit 0
+fi
