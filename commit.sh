@@ -1,4 +1,6 @@
 #!/bin/bash
 git add .
-git commit -m "final phase 1"
+
+read varmessage
+git commit -m "$varmessage"
 git push
