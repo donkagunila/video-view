@@ -1,7 +1,7 @@
 #!/bin/bash
 echo $'\e[32;1mStatus of the files \e[0m'
 git status
-echo addin
+echo add all files with git add .? \(y/n\) read varans
 git add .
 echo please enter message
 read varmessage
